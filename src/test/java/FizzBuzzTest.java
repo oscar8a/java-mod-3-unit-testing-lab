@@ -37,4 +37,12 @@ class FizzBuzzTest {
         String result = fizzBuzz.fizzBuzzString(test);
         assertEquals("FizzBuzz", result);
     }
+
+    @Test
+    void nullString() {
+        String test = null;
+        String result = fizzBuzz.fizzBuzzString(test);
+        assertEquals("FizzBuzz", result);
+    }
+
 }
