@@ -23,4 +23,11 @@ class FizzBuzzTest {
         String result = fizzBuzz.fizzBuzzString(test);
         assertEquals("Fizz", result);
     }
+
+    @Test
+    void endsWithB() {
+        String test = "pub";
+        String result = fizzBuzz.fizzBuzzString(test);
+        assertEquals("Buzz", result);
+    }
 }
