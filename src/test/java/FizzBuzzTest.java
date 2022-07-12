@@ -30,4 +30,11 @@ class FizzBuzzTest {
         String result = fizzBuzz.fizzBuzzString(test);
         assertEquals("Buzz", result);
     }
+
+    @Test
+    void startsWithFAndEndsWithB() {
+        String test = "fab";
+        String result = fizzBuzz.fizzBuzzString(test);
+        assertEquals("FizzBuzz", result);
+    }
 }
