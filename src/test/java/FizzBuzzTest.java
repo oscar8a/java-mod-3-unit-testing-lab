@@ -41,8 +41,7 @@ class FizzBuzzTest {
     @Test
     void nullString() {
         String test = null;
-        String result = fizzBuzz.fizzBuzzString(test);
-        assertEquals("FizzBuzz", result);
+        assertThrows(NullPointerException.class, () -> fizzBuzz.fizzBuzzString(test));
     }
 
 }
