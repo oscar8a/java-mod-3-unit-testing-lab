@@ -40,9 +40,7 @@ class FizzBuzzTest {
 
     @Test
     void nullString() {
-        String test = null;
-        String result = fizzBuzz.fizzBuzzString(test);
-        assertEquals("null", result);
+        assertThrows(IllegalArgumentException.class, () -> fizzBuzz.fizzBuzzString(null));
     }
 
 }
